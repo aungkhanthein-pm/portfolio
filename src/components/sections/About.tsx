@@ -57,7 +57,7 @@ export function About() {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 auto-rows-fr">
           {highlights.map((item, i) => {
             const Icon = item.icon;
             return (
@@ -66,6 +66,7 @@ export function About() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.5, delay: 0.1 + i * 0.08 }}
+                className="h-full"
               >
                 <SpotlightCard className="p-5 h-full flex flex-col">
                   <motion.div

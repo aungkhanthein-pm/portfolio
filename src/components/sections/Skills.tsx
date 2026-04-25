@@ -29,13 +29,14 @@ export function Skills() {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 auto-rows-fr">
           {skillGroups.map((group, i) => (
             <motion.div
               key={group.label}
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: 0.05 + i * 0.07 }}
+              className="h-full"
             >
               <SpotlightCard className="p-5 h-full">
                 <h3 className="text-xs font-semibold uppercase tracking-widest text-primary mb-4 group-hover:text-primary/90 transition-colors duration-300">

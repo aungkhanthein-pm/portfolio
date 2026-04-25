@@ -39,7 +39,7 @@ export function Impact() {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 auto-rows-fr">
           {impactItems.map((item, i) => {
             const Icon = icons[i % icons.length];
             return (
@@ -48,6 +48,7 @@ export function Impact() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.5, delay: 0.05 + i * 0.08 }}
+                className="h-full"
               >
                 <SpotlightCard className="p-6 h-full flex flex-col">
                   <div className="flex items-center gap-3 mb-3">

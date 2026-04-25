@@ -40,8 +40,9 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-60px" }}
       transition={{ duration: 0.5, delay: index * 0.07 }}
+      className="h-full"
     >
-      <SpotlightCard className="p-6 flex flex-col gap-4">
+      <SpotlightCard className="p-6 flex flex-col gap-4 h-full">
         {/* Header */}
         <div className="flex items-start justify-between gap-3">
           <div className="flex items-center gap-3">
@@ -63,12 +64,12 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
         </div>
 
         {/* Summary */}
-        <p className="text-sm text-muted-foreground leading-relaxed group-hover:text-foreground/90 transition-colors duration-300">
+        <p className="text-sm text-muted-foreground leading-relaxed group-hover:text-foreground/90 transition-colors duration-300 flex-grow">
           {project.summary}
         </p>
 
         {/* Highlights */}
-        <ul className="flex flex-col gap-2">
+        <ul className="flex flex-col gap-2 flex-grow">
           {project.highlights.map((point, idx) => (
             <motion.li
               key={point}
@@ -87,7 +88,7 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
         </ul>
 
         {/* Tags */}
-        <div className="flex flex-wrap gap-1.5 mt-auto pt-2">
+        <div className="flex flex-wrap gap-1.5 mt-auto pt-2 flex-grow flex items-end">
           {project.tags.map((tag, idx) => (
             <motion.div
               key={tag}

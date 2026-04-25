@@ -36,7 +36,7 @@ export function SpotlightCard({ children, className = "" }: SpotlightCardProps) 
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
       whileHover={{ y: -6 }}
-      className={`group rounded-lg border border-border/50 bg-card/40 backdrop-blur-sm card-glow hover:border-primary/60 hover:bg-card/60 hover:shadow-2xl hover:shadow-primary/15 transition-all duration-300 relative overflow-hidden ${className}`}
+      className={`group rounded-lg border border-border/50 bg-card/40 backdrop-blur-sm card-glow hover:border-primary/60 hover:bg-card/60 hover:shadow-2xl hover:shadow-primary/15 transition-all duration-300 relative overflow-hidden flex flex-col h-full ${className}`}
     >
       {/* Dynamic spotlight effect that follows cursor */}
       {isHovering && (
@@ -84,7 +84,7 @@ export function SpotlightCard({ children, className = "" }: SpotlightCardProps) 
       />
 
       {/* Content */}
-      <div className="relative z-10">{children}</div>
+      <div className="relative z-10 flex flex-col h-full">{children}</div>
     </motion.div>
   );
 }
