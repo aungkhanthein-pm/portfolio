@@ -120,18 +120,18 @@ export const projects: Project[] = [
     icon: "Wifi",
   },
   {
-    id: "compliance-recording-infrastructure",
-    title: "Compliance Recording Infrastructure Support",
-    category: "Infrastructure / System Integration",
+    id: "system-testing-acceptance-documentation",
+    title: "System Testing & Acceptance Documentation",
+    category: "QA / Documentation",
     summary:
-      "Supported compliance recording environments involving recorders, servers, network configuration, storage, SSL, and system integration troubleshooting.",
+      "Prepared and improved structured testing documentation for system acceptance, helping technical checks become clearer, more organized, and easier to verify.",
     highlights: [
-      "Assisted with recorder/server environment checks involving recording systems, NAS, AD, and playback terminals",
-      "Troubleshot Apache, SSL configuration, VM access, networking, and service stability issues",
-      "Prepared and reviewed OSAT, SSAT, and UAT-style validation documentation",
+      "Created and refined UAT, OSAT, and SSAT-style test documentation for project validation",
+      "Organized test cases, expected results, actual results, tester details, dates, and pass/fail criteria",
+      "Improved document formatting and wording so testing records looked more official and easier to review",
     ],
-    tags: ["Windows Server", "Apache", "SSL", "VM", "NAS", "AD", "OSAT", "SSAT"],
-    icon: "HardDrive",
+    tags: ["UAT", "OSAT", "SSAT", "Test Cases", "Documentation", "QA"],
+    icon: "CheckCircle2",
   },
   {
     id: "security-testing-qa",
