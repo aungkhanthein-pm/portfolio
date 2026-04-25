@@ -96,7 +96,7 @@ export const projects: Project[] = [
     title: "Server Hosting & Deployment Operations",
     category: "Infrastructure / Deployment",
     summary:
-      "Hosted and configured internal application environments, handling server setup, domain routing, SSL issues, and production deployment troubleshooting.",
+      "Configured hosting environments for internal applications, handling server setup, domain routing, SSL issues, and deployment troubleshooting.",
     highlights: [
       "Configured hosting environments using Windows Server, IIS, Cloudflare, and deployment platforms",
       "Troubleshot SSL/TLS, DNS, reverse proxy, tunnel, and production endpoint issues",
