@@ -25,8 +25,7 @@ export function Projects() {
             What I worked on
           </h2>
           <p className="text-muted-foreground max-w-xl mx-auto leading-relaxed">
-            Six areas of real-world work completed during my internship, spanning
-            software development, AI, infrastructure, and security.
+            Real-world internship work across software development, AI integration, infrastructure, automation, APIs, and security.
           </p>
         </motion.div>
 
