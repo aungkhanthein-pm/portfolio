@@ -6,12 +6,14 @@ import { Projects } from "@/components/sections/Projects";
 import { Skills } from "@/components/sections/Skills";
 import { Impact } from "@/components/sections/Impact";
 import { Contact } from "@/components/sections/Contact";
+import { BackgroundEffects } from "@/components/effects/BackgroundEffects";
 
 function App() {
   return (
-    <div className="min-h-screen bg-background text-foreground">
+    <div className="min-h-screen bg-background text-foreground relative">
+      <BackgroundEffects />
       <Navbar />
-      <main>
+      <main className="relative z-10">
         <Hero />
         <About />
         <Projects />

@@ -31,7 +31,7 @@ export function About() {
   const isInView = useInView(ref, { once: true, margin: "-80px" });
 
   return (
-    <section id="about" className="section-padding bg-secondary/20">
+    <section id="about" className="section-padding bg-secondary/20 relative z-10">
       <div className="max-w-6xl mx-auto">
         <motion.div
           ref={ref}
@@ -65,13 +65,26 @@ export function About() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.5, delay: 0.1 + i * 0.08 }}
-                className="rounded-lg border border-border bg-card p-5 glow-border hover:border-primary/30 transition-colors"
+                whileHover={{ y: -2 }}
+                className="group rounded-lg border border-border bg-card p-5 glow-border hover:border-primary/40 hover:shadow-lg hover:shadow-primary/5 transition-all duration-300 relative overflow-hidden"
               >
-                <div className="mb-3 inline-flex items-center justify-center w-9 h-9 rounded-md bg-primary/10 text-primary">
+                <div
+                  className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"
+                  style={{
+                    background:
+                      "radial-gradient(circle at 50% 50%, rgba(59, 130, 246, 0.03), transparent)",
+                  }}
+                />
+                <motion.div
+                  className="mb-3 inline-flex items-center justify-center w-9 h-9 rounded-md bg-primary/10 text-primary group-hover:bg-primary/20 transition-colors relative z-10"
+                  whileHover={{ scale: 1.1 }}
+                >
                   <Icon className="h-4 w-4" />
-                </div>
-                <h3 className="text-sm font-semibold mb-1.5">{item.label}</h3>
-                <p className="text-xs text-muted-foreground leading-relaxed">
+                </motion.div>
+                <h3 className="text-sm font-semibold mb-1.5 relative z-10">
+                  {item.label}
+                </h3>
+                <p className="text-xs text-muted-foreground leading-relaxed relative z-10">
                   {item.description}
                 </p>
               </motion.div>
