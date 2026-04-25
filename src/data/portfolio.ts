@@ -158,7 +158,7 @@ export const skillGroups: SkillGroup[] = [
   },
   {
     label: "Backend",
-    skills: ["Node.js", "REST APIs", "API Key Auth", "Drizzle ORM", "MySQL"],
+    skills: ["Node.js", "REST APIs", "API Key Auth", "Data Feed APIs", "Drizzle ORM", "MySQL"],
   },
   {
     label: "Desktop Apps",
@@ -170,7 +170,7 @@ export const skillGroups: SkillGroup[] = [
   },
   {
     label: "Infrastructure",
-    skills: ["Windows Server", "IIS", "Cloudflare", "SSL/TLS", "DNS", "SMS Gateway", "Device Networking"],
+    skills: ["Windows Server", "IIS", "Cloudflare Tunnel", "SSL/TLS", "DNS", "Apache", "VM Access", "Device Networking"],
   },
   {
     label: "Security / Testing",
@@ -178,7 +178,11 @@ export const skillGroups: SkillGroup[] = [
   },
   {
     label: "Tools",
-    skills: ["Git", "VS Code", "Postman", "GitHub", "Linux CLI", "NSSM", "Apache"],
+    skills: ["Git", "GitHub", "VS Code", "Postman", "pnpm", "Chrome DevTools", "NSSM", "Linux CLI"],
+  },
+  {
+    label: "Delivery / Documentation",
+    skills: ["UAT Documentation", "OSAT / SSAT", "Technical Handover", "Setup Guides", "Issue Analysis", "Testing Records"],
   },
 ];
 
