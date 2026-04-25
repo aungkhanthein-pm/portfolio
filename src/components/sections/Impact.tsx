@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { impactItems } from "@/data/portfolio";
 import { SpotlightCard } from "@/components/ui/spotlight-card";
@@ -16,16 +15,12 @@ const icons = [CheckCircle2, Bug, Layers, Lightbulb, FileText, Wrench];
 
 export function Impact() {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "-80px" });
 
   return (
     <section id="impact" className="section-padding">
       <div className="max-w-6xl mx-auto">
-        <motion.div
+        <div
           ref={ref}
-          initial={{ opacity: 0, y: 24 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6 }}
           className="text-center mb-14"
         >
           <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-3">
@@ -37,17 +32,14 @@ export function Impact() {
           <p className="text-muted-foreground max-w-xl mx-auto leading-relaxed">
             Beyond writing code — the problem-solving, ownership, and communication I brought to the team.
           </p>
-        </motion.div>
+        </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 auto-rows-fr">
           {impactItems.map((item, i) => {
             const Icon = icons[i % icons.length];
             return (
-              <motion.div
+              <div
                 key={item.title}
-                initial={{ opacity: 0, y: 20 }}
-                animate={isInView ? { opacity: 1, y: 0 } : {}}
-                transition={{ duration: 0.5, delay: 0.05 + i * 0.08 }}
                 className="h-full"
               >
                 <SpotlightCard className="p-6 h-full flex flex-col">
@@ -66,7 +58,7 @@ export function Impact() {
                     {item.description}
                   </p>
                 </SpotlightCard>
-              </motion.div>
+              </div>
             );
           })}
         </div>

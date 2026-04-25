@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { Layers, Cpu, Shield, Wrench } from "lucide-react";
 import { SpotlightCard } from "@/components/ui/spotlight-card";
@@ -29,16 +28,12 @@ const highlights = [
 
 export function About() {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "-80px" });
 
   return (
     <section id="about" className="section-padding bg-secondary/20 relative z-10">
       <div className="max-w-6xl mx-auto">
-        <motion.div
+        <div
           ref={ref}
-          initial={{ opacity: 0, y: 24 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6 }}
           className="text-center mb-14"
         >
           <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-3">
@@ -55,17 +50,14 @@ export function About() {
             licensing logic, tested SMS hardware, and prepared structured security 
             and QA documentation — all within the same engineering team.
           </p>
-        </motion.div>
+        </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 auto-rows-fr">
-          {highlights.map((item, i) => {
+          {highlights.map((item) => {
             const Icon = item.icon;
             return (
-              <motion.div
+              <div
                 key={item.label}
-                initial={{ opacity: 0, y: 20 }}
-                animate={isInView ? { opacity: 1, y: 0 } : {}}
-                transition={{ duration: 0.5, delay: 0.1 + i * 0.08 }}
                 className="h-full"
               >
                 <SpotlightCard className="p-5 h-full flex flex-col">
@@ -82,7 +74,7 @@ export function About() {
                     {item.description}
                   </p>
                 </SpotlightCard>
-              </motion.div>
+              </div>
             );
           })}
         </div>

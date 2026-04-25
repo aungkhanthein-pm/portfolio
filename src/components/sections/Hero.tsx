@@ -1,26 +1,5 @@
-import { motion } from "framer-motion";
 import { ArrowDown, Download, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
-
-const containerVariants = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.1,
-      delayChildren: 0.2,
-    },
-  },
-};
-
-const itemVariants = {
-  hidden: { opacity: 0, y: 20 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: { duration: 0.6 },
-  },
-};
 
 export function Hero() {
   return (
@@ -38,96 +17,67 @@ export function Hero() {
         }}
       />
 
-      <motion.div
-        className="relative z-10 max-w-3xl mx-auto"
-        variants={containerVariants}
-        initial="hidden"
-        animate="visible"
-      >
+      <div className="relative z-10 max-w-3xl mx-auto">
         {/* Availability badge */}
-        <motion.div
-          variants={itemVariants}
-          className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-4 py-1.5 text-xs text-primary font-medium mb-8 backdrop-blur-sm"
-        >
+        <div className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-4 py-1.5 text-xs text-primary font-medium mb-8 backdrop-blur-sm">
           <span className="relative flex h-2 w-2">
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75" />
             <span className="relative inline-flex rounded-full h-2 w-2 bg-primary" />
           </span>
           Open to full-time opportunities
-        </motion.div>
+        </div>
 
         {/* Headline */}
-        <motion.h1
-          variants={itemVariants}
-          className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight leading-tight mb-6"
-        >
-          {/* EDIT: Replace with your name */}
-          Hi, I&apos;m{" "}
-          <span className="text-gradient inline-block">William</span>
-        </motion.h1>
+        <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight mb-6 leading-tight">
+          Hi, I'm <span className="text-primary">William</span>
+        </h1>
 
-        {/* Subtitle */}
-        <motion.p
-          variants={itemVariants}
-          className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto mb-6 leading-relaxed font-light"
-        >
+        {/* Subheading */}
+        <p className="text-lg sm:text-xl text-muted-foreground mb-6 leading-relaxed max-w-2xl mx-auto">
           Software Engineering Intern who contributed to real features across full-stack applications, AI integrations, infrastructure, and security testing.
-        </motion.p>
+        </p>
 
-        <motion.p
-          variants={itemVariants}
-          className="text-sm text-muted-foreground/70 mb-12 tracking-wide font-medium"
-        >
-          React &middot; TypeScript &middot; Node.js &middot; AI &middot; APIs &middot; Security
-        </motion.p>
+        {/* Tech stack */}
+        <p className="text-sm text-primary/80 font-medium tracking-wide mb-10">
+          React · TypeScript · Node.js · AI · APIs · Security
+        </p>
 
-        {/* CTA buttons */}
-        <motion.div
-          variants={itemVariants}
-          className="flex flex-wrap items-center justify-center gap-4"
-        >
-          <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-            <Button asChild size="lg" className="font-semibold">
-              <a href="#projects">
-                View Projects
-                <ArrowDown className="h-4 w-4 ml-1" />
-              </a>
-            </Button>
-          </motion.div>
-          <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-            <Button asChild variant="outline" size="lg">
-              {/* EDIT: Replace /resume.pdf with your actual resume path */}
-              <a href="/resume.pdf" download>
-                <Download className="h-4 w-4 mr-1" />
-                Download Resume
-              </a>
-            </Button>
-          </motion.div>
-          <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-            <Button asChild variant="ghost" size="lg">
-              <a href="#contact">
-                <Mail className="h-4 w-4 mr-1" />
-                Contact Me
-              </a>
-            </Button>
-          </motion.div>
-        </motion.div>
-      </motion.div>
-
-      {/* Scroll indicator */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1.2, duration: 0.6 }}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2"
-      >
-        <motion.div
-          animate={{ y: [0, 8, 0] }}
-          transition={{ repeat: Infinity, duration: 1.8 }}
-        >
-          <ArrowDown className="h-4 w-4 text-muted-foreground/50" />
-        </motion.div>
-      </motion.div>
+        {/* CTA Buttons */}
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <Button
+            asChild
+            size="lg"
+            className="group"
+          >
+            <a href="#projects">
+              View Projects
+              <ArrowDown className="ml-2 h-4 w-4 group-hover:translate-y-1 transition-transform" />
+            </a>
+          </Button>
+          <Button
+            asChild
+            variant="outline"
+            size="lg"
+            className="group"
+          >
+            <a href="/resume.pdf" download>
+              <Download className="mr-2 h-4 w-4" />
+              Download Resume
+            </a>
+          </Button>
+          <Button
+            asChild
+            variant="outline"
+            size="lg"
+            className="group"
+          >
+            <a href="#contact">
+              <Mail className="mr-2 h-4 w-4" />
+              Contact Me
+            </a>
+          </Button>
+        </div>
+      </div>
     </section>
   );
 }

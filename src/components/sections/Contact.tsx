@@ -36,11 +36,8 @@ export function Contact() {
   return (
     <section id="contact" className="section-padding bg-secondary/20">
       <div className="max-w-3xl mx-auto">
-        <motion.div
+        <div
           ref={ref}
-          initial={{ opacity: 0, y: 24 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6 }}
           className="text-center mb-14"
         >
           <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-3">
@@ -54,17 +51,14 @@ export function Contact() {
             interesting conversations. Feel free to reach out through any of the
             channels below.
           </p>
-        </motion.div>
+        </div>
 
         <div className="flex flex-col gap-4 mb-10">
-          {contactLinks.map((link, i) => {
+          {contactLinks.map((link) => {
             const Icon = link.icon;
             return (
-              <motion.div
+              <div
                 key={link.label}
-                initial={{ opacity: 0, x: -16 }}
-                animate={isInView ? { opacity: 1, x: 0 } : {}}
-                transition={{ duration: 0.5, delay: 0.1 + i * 0.08 }}
               >
                 <SpotlightCard
                   className="p-5"
@@ -94,7 +88,7 @@ export function Contact() {
                     </span>
                   </a>
                 </SpotlightCard>
-              </motion.div>
+              </div>
             );
           })}
         </div>
