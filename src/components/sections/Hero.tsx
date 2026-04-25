@@ -1,0 +1,113 @@
+import { motion } from "framer-motion";
+import { ArrowDown, Download, Mail } from "lucide-react";
+import { Button } from "@/components/ui/button";
+
+export function Hero() {
+  return (
+    <section
+      id="hero"
+      className="relative min-h-screen flex flex-col items-center justify-center text-center section-padding overflow-hidden"
+    >
+      {/* Subtle background glow */}
+      <div
+        aria-hidden
+        className="absolute inset-0 pointer-events-none"
+        style={{
+          background:
+            "radial-gradient(ellipse 80% 50% at 50% -10%, hsl(224 76% 65% / 0.12), transparent)",
+        }}
+      />
+
+      <div className="relative z-10 max-w-3xl mx-auto">
+        {/* Availability badge */}
+        <motion.div
+          initial={{ opacity: 0, y: 24 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0, ease: "easeOut" }}
+          className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-4 py-1.5 text-xs text-primary font-medium mb-8"
+        >
+          <span className="relative flex h-2 w-2">
+            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75" />
+            <span className="relative inline-flex rounded-full h-2 w-2 bg-primary" />
+          </span>
+          Open to full-time opportunities
+        </motion.div>
+
+        {/* Headline */}
+        <motion.h1
+          initial={{ opacity: 0, y: 24 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.1, ease: "easeOut" }}
+          className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight leading-tight mb-4"
+        >
+          {/* EDIT: Replace with your name */}
+          Hi, I&apos;m{" "}
+          <span className="text-gradient">Your Name</span>
+        </motion.h1>
+
+        {/* Subtitle */}
+        <motion.p
+          initial={{ opacity: 0, y: 24 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
+          className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto mb-4 leading-relaxed"
+        >
+          Software Engineering Intern who shipped real features across full-stack
+          applications, AI integrations, infrastructure, and security testing.
+        </motion.p>
+
+        <motion.p
+          initial={{ opacity: 0, y: 24 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.3, ease: "easeOut" }}
+          className="text-sm text-muted-foreground/70 mb-10"
+        >
+          React &middot; TypeScript &middot; Node.js &middot; AI &middot; APIs &middot; Security
+        </motion.p>
+
+        {/* CTA buttons */}
+        <motion.div
+          initial={{ opacity: 0, y: 24 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.4, ease: "easeOut" }}
+          className="flex flex-wrap items-center justify-center gap-3"
+        >
+          <Button asChild size="lg" className="font-semibold">
+            <a href="#projects">
+              View Projects
+              <ArrowDown className="h-4 w-4 ml-1" />
+            </a>
+          </Button>
+          <Button asChild variant="outline" size="lg">
+            {/* EDIT: Replace /resume.pdf with your actual resume path */}
+            <a href="/resume.pdf" download>
+              <Download className="h-4 w-4 mr-1" />
+              Download Resume
+            </a>
+          </Button>
+          <Button asChild variant="ghost" size="lg">
+            <a href="#contact">
+              <Mail className="h-4 w-4 mr-1" />
+              Contact Me
+            </a>
+          </Button>
+        </motion.div>
+      </div>
+
+      {/* Scroll indicator */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1.2, duration: 0.6 }}
+        className="absolute bottom-8 left-1/2 -translate-x-1/2"
+      >
+        <motion.div
+          animate={{ y: [0, 8, 0] }}
+          transition={{ repeat: Infinity, duration: 1.8, ease: "easeInOut" }}
+        >
+          <ArrowDown className="h-4 w-4 text-muted-foreground/50" />
+        </motion.div>
+      </motion.div>
+    </section>
+  );
+}
