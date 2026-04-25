@@ -83,4 +83,16 @@
   .bg-gradient-radial {
     background: radial-gradient(var(--tw-gradient-stops));
   }
+
+  .glass {
+    @apply backdrop-blur-md bg-white/5 border border-white/10;
+  }
+
+  .glass-hover {
+    @apply hover:bg-white/10 hover:border-white/20 transition-all duration-300;
+  }
+
+  .card-glow {
+    box-shadow: 0 0 0 1px hsl(var(--border)), 0 0 30px -8px hsl(var(--primary) / 0.2);
+  }
 }
