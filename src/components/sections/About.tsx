@@ -17,12 +17,12 @@ const highlights = [
   {
     icon: Wrench,
     label: "Infrastructure & APIs",
-    description: "Configured SMS gateways, built API catalogs with authentication, and validated network endpoints.",
+    description: "Tested SMS gateway setups, supported API catalog work with authentication, and validated network endpoints.",
   },
   {
     icon: Shield,
     label: "Security & QA",
-    description: "Conducted XSS, SQL injection, and CSRF testing with structured UAT documentation and bug reporting.",
+    description: "Performed structured checks for XSS, SQL injection, CSRF, and validation behavior, with UAT documentation and bug reporting.",
   },
 ];
 
@@ -48,11 +48,11 @@ export function About() {
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto leading-relaxed">
             {/* EDIT: Personalise this paragraph with your own story */}
-            During my internship, I worked across production software that real
-            users depend on. I contributed to a full-stack desktop platform,
-            integrated a local AI assistant, built API infrastructure, managed
-            licensing logic, tested SMS hardware, and performed structured
-            security assessments — all within the same engineering team.
+            During my internship, I worked across real business software used by 
+            teams and customers. I contributed to a full-stack desktop platform, 
+            integrated a local AI assistant, supported API development, worked on 
+            licensing logic, tested SMS hardware, and prepared structured security 
+            and QA documentation — all within the same engineering team.
           </p>
         </motion.div>
 

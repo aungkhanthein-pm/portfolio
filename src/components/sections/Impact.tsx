@@ -34,8 +34,7 @@ export function Impact() {
             How I contributed
           </h2>
           <p className="text-muted-foreground max-w-xl mx-auto leading-relaxed">
-            Beyond writing code — the habits, ownership, and thinking I brought
-            to the team.
+            Beyond writing code — the problem-solving, ownership, and communication I brought to the team.
           </p>
         </motion.div>
 

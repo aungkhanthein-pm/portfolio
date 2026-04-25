@@ -52,8 +52,7 @@ export function Hero() {
           transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
           className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto mb-4 leading-relaxed"
         >
-          Software Engineering Intern who shipped real features across full-stack
-          applications, AI integrations, infrastructure, and security testing.
+          Software Engineering Intern who contributed to real features across full-stack applications, AI integrations, infrastructure, and security testing.
         </motion.p>
 
         <motion.p

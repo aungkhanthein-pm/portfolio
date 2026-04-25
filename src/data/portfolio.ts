@@ -190,14 +190,14 @@ export const skillGroups: SkillGroup[] = [
 
 export const impactItems: ImpactItem[] = [
   {
-    title: "End-to-End Ownership",
+    title: "Feature Ownership",
     description:
-      "Took features from initial understanding through implementation, debugging, and delivery — not just assigned subtasks.",
+      "Followed features from initial understanding through implementation, debugging, and delivery support — not only isolated subtasks.",
   },
   {
     title: "Real-World Debugging",
     description:
-      "Resolved production-level issues including authentication failures, performance regressions, and broken build pipelines.",
+      "Debugged real application issues including authentication failures, performance lag, missing data, and broken build pipelines.",
   },
   {
     title: "Cross-Stack Contribution",
@@ -212,11 +212,11 @@ export const impactItems: ImpactItem[] = [
   {
     title: "Documentation & Communication",
     description:
-      "Produced UAT documents, bug reports, and API documentation that the team could act on directly.",
+      "Prepared UAT documents, bug reports, and API notes that helped the team review, test, and act on issues more clearly.",
   },
   {
     title: "Independent Problem Solving",
     description:
-      "Diagnosed unfamiliar systems — from SMS hardware to LLM prompt behavior — with minimal hand-holding.",
+      "Investigated unfamiliar systems — from SMS hardware to LLM prompt behavior — by breaking problems down and testing step by step.",
   },
 ];
