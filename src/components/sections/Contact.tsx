@@ -31,7 +31,7 @@ const contactLinks = [
 
 export function Contact() {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "-80px" });
+  const isInView = useInView(ref, { once: true, margin: "-200px" });
 
   return (
     <section id="contact" className="section-padding bg-secondary/20">
