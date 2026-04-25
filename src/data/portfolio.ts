@@ -78,6 +78,34 @@ export const projects: Project[] = [
     icon: "KeyRound",
   },
   {
+    id: "background-sync-service",
+    title: "Background Sync Service Automation",
+    category: "System Service / Automation",
+    summary:
+      "Worked on a background sync service that runs as a Windows service to keep application data synchronized without manual startup.",
+    highlights: [
+      "Configured sync processes to run continuously as Windows services using NSSM",
+      "Handled service startup, restart behavior, logging, and troubleshooting",
+      "Supported reliable background data synchronization for application workflows",
+    ],
+    tags: ["NSSM", "Windows Service", "Node.js", "Sync Service", "Logging", "Automation"],
+    icon: "Wrench",
+  },
+  {
+    id: "server-hosting-deployment",
+    title: "Server Hosting & Deployment Operations",
+    category: "Infrastructure / Deployment",
+    summary:
+      "Hosted and configured internal application environments, handling server setup, domain routing, SSL issues, and production deployment troubleshooting.",
+    highlights: [
+      "Configured hosting environments using Windows Server, IIS, Cloudflare, and deployment platforms",
+      "Troubleshot SSL/TLS, DNS, reverse proxy, tunnel, and production endpoint issues",
+      "Improved deployment reliability by identifying differences between local, staging, and production environments",
+    ],
+    tags: ["Windows Server", "IIS", "Cloudflare", "SSL/TLS", "DNS", "Vercel"],
+    icon: "Server",
+  },
+  {
     id: "teltonika-sms-gateway",
     title: "Teltonika SMS Gateway",
     category: "Infrastructure / Network Testing",
@@ -90,6 +118,20 @@ export const projects: Project[] = [
     ],
     tags: ["Teltonika", "SMS Gateway", "HTTP API", "Networking", "Device Config"],
     icon: "Wifi",
+  },
+  {
+    id: "compliance-recording-infrastructure",
+    title: "Compliance Recording Infrastructure Support",
+    category: "Infrastructure / System Integration",
+    summary:
+      "Supported compliance recording environments involving recorders, servers, network configuration, storage, SSL, and system integration troubleshooting.",
+    highlights: [
+      "Assisted with recorder/server environment checks involving recording systems, NAS, AD, and playback terminals",
+      "Troubleshot Apache, SSL configuration, VM access, networking, and service stability issues",
+      "Prepared and reviewed OSAT, SSAT, and UAT-style validation documentation",
+    ],
+    tags: ["Windows Server", "Apache", "SSL", "VM", "NAS", "AD", "OSAT", "SSAT"],
+    icon: "HardDrive",
   },
   {
     id: "security-testing-qa",
@@ -128,7 +170,7 @@ export const skillGroups: SkillGroup[] = [
   },
   {
     label: "Infrastructure",
-    skills: ["SMS Gateway", "Device Networking", "IP Configuration", "HTTP Endpoints"],
+    skills: ["Windows Server", "IIS", "Cloudflare", "SSL/TLS", "DNS", "SMS Gateway", "Device Networking"],
   },
   {
     label: "Security / Testing",
@@ -136,7 +178,7 @@ export const skillGroups: SkillGroup[] = [
   },
   {
     label: "Tools",
-    skills: ["Git", "VS Code", "Postman", "GitHub", "Linux CLI"],
+    skills: ["Git", "VS Code", "Postman", "GitHub", "Linux CLI", "NSSM", "Apache"],
   },
 ];
 
