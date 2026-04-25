@@ -8,22 +8,22 @@ const contactLinks = [
   {
     icon: Mail,
     label: "Email",
-    value: "your@email.com",
-    href: "mailto:your@email.com",
+    value: "akhpsnm@gmail.com",
+    href: "mailto:akhpsnm@gmail.com",
     description: "Best way to reach me",
   },
   {
     icon: ExternalLink,
     label: "LinkedIn",
-    value: "linkedin.com/in/yourusername",
-    href: "https://linkedin.com/in/yourusername",
+    value: "linkedin.com/in/aungkhanthein",
+    href: "https://www.linkedin.com/in/aungkhanthein",
     description: "Professional profile",
   },
   {
     icon: GitBranch,
     label: "GitHub",
-    value: "github.com/yourusername",
-    href: "https://github.com/yourusername",
+    value: "github.com/aungkhanthein-pm",
+    href: "https://github.com/aungkhanthein-pm",
     description: "Code and projects",
   },
 ];

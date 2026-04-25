@@ -42,7 +42,7 @@ export function Hero() {
         >
           {/* EDIT: Replace with your name */}
           Hi, I&apos;m{" "}
-          <span className="text-gradient">Your Name</span>
+          <span className="text-gradient">William</span>
         </motion.h1>
 
         {/* Subtitle */}

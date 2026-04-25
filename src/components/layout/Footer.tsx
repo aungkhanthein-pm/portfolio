@@ -6,11 +6,11 @@ export function Footer() {
       <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
         <p className="text-sm text-muted-foreground">
           {/* EDIT: Replace with your name */}
-          &copy; {new Date().getFullYear()} Your Name. Built with React &amp; Tailwind CSS.
+          &copy; {new Date().getFullYear()} William. Built with React &amp; Tailwind CSS.
         </p>
         <div className="flex items-center gap-4">
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/aungkhanthein-pm"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub"
@@ -19,7 +19,7 @@ export function Footer() {
             <GitBranch className="h-4 w-4" />
           </a>
           <a
-            href="https://linkedin.com/in/yourusername"
+            href="https://linkedin.com/in/aungkhanthein"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn"
@@ -28,7 +28,7 @@ export function Footer() {
             <ExternalLink className="h-4 w-4" />
           </a>
           <a
-            href="mailto:your@email.com"
+            href="mailto:akhpsnm@gmail.com"
             aria-label="Email"
             className="text-muted-foreground hover:text-foreground transition-colors"
           >

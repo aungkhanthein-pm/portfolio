@@ -39,7 +39,7 @@ export function Navbar() {
           <Code2 className="h-5 w-5 text-primary" />
           <span className="font-semibold text-sm tracking-wide">
             {/* EDIT: Replace with your name or initials */}
-            YourName.dev
+            William.dev
           </span>
         </a>
 
