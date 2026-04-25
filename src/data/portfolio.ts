@@ -68,7 +68,7 @@ export const projects: Project[] = [
     title: "Digital Desk Licensing",
     category: "Product / License Management",
     summary:
-      "Worked on the customer-facing licensing system, implementing seat-based license logic and improving admin workflows for managing product access at scale.",
+      "Configured and improved the customer-facing licensing system, implementing seat-based license logic and enhancing admin workflows for managing product access at scale.",
     highlights: [
       "Implemented fixed and floating seat logic for multi-seat license management",
       "Improved admin and product flows for customer license assignment and revocation",
@@ -82,7 +82,7 @@ export const projects: Project[] = [
     title: "Background Sync Service Automation",
     category: "System Service / Automation",
     summary:
-      "Worked on a background sync service that runs as a Windows service to keep application data synchronized without manual startup.",
+      "Configured and supported a background sync service that runs as a Windows service to keep application data synchronized without manual startup.",
     highlights: [
       "Configured sync processes to run continuously as Windows services using NSSM",
       "Handled service startup, restart behavior, logging, and troubleshooting",
@@ -121,7 +121,7 @@ export const projects: Project[] = [
   },
   {
     id: "system-testing-acceptance-documentation",
-    title: "System Testing & Acceptance Documentation",
+    title: "Testing & Acceptance Documentation",
     category: "QA / Documentation",
     summary:
       "Prepared and improved structured testing documentation for system acceptance, helping technical checks become clearer, more organized, and easier to verify.",
@@ -154,7 +154,7 @@ export const projects: Project[] = [
 export const skillGroups: SkillGroup[] = [
   {
     label: "Frontend",
-    skills: ["React", "TypeScript", "Tailwind CSS", "Vite", "HTML/CSS"],
+    skills: ["React", "TypeScript", "Tailwind CSS", "Vite", "Responsive UI", "Electron"],
   },
   {
     label: "Backend",
@@ -162,7 +162,7 @@ export const skillGroups: SkillGroup[] = [
   },
   {
     label: "Desktop Apps",
-    skills: ["Electron", "IPC Communication", "Local Data Handling"],
+    skills: ["Electron", "Electron IPC", "Local Data Handling"],
   },
   {
     label: "AI / Automation",
