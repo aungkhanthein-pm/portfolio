@@ -5,6 +5,7 @@ import { About } from "@/components/sections/About";
 import { Projects } from "@/components/sections/Projects";
 import { Skills } from "@/components/sections/Skills";
 import { Impact } from "@/components/sections/Impact";
+import { Leadership } from "@/components/sections/Leadership";
 import { Contact } from "@/components/sections/Contact";
 import { InteractiveBackground } from "@/components/effects/InteractiveBackground";
 
@@ -19,6 +20,7 @@ function App() {
         <Projects />
         <Skills />
         <Impact />
+        <Leadership />
         <Contact />
       </main>
       <Footer />

@@ -219,4 +219,24 @@ export const impactItems: ImpactItem[] = [
     description:
       "Investigated unfamiliar systems — from SMS hardware to LLM prompt behavior — by breaking problems down and testing step by step.",
   },
+  {
+    title: "Team Coordination",
+    description:
+      "Coordinated daily stand-up updates and helped track junior interns' progress, supporting team alignment and visibility.",
+  },
+  {
+    title: "Peer Support & Mentoring",
+    description:
+      "Supported peers by breaking down tasks, clarifying implementation gaps, and turning project ideas into practical feature work.",
+  },
+  {
+    title: "Clear Communication",
+    description:
+      "Communicated progress, blockers, and questions more clearly through structured updates and documentation.",
+  },
+  {
+    title: "Assessment Recognition",
+    description:
+      "Recognized with A (Excellent) ratings in company bi-monthly internship assessments, including later assessments with 5/5 average ratings.",
+  },
 ];
