@@ -18,6 +18,11 @@ export interface ImpactItem {
   description: string;
 }
 
+export interface LeadershipItem {
+  title: string;
+  description: string;
+}
+
 // ─── PROJECTS ────────────────────────────────────────────────────────────────
 
 export const projects: Project[] = [
@@ -219,6 +224,11 @@ export const impactItems: ImpactItem[] = [
     description:
       "Investigated unfamiliar systems — from SMS hardware to LLM prompt behavior — by breaking problems down and testing step by step.",
   },
+];
+
+// ─── LEADERSHIP ──────────────────────────────────────────────────────────────
+
+export const leadershipItems: LeadershipItem[] = [
   {
     title: "Team Coordination",
     description:
@@ -234,5 +244,9 @@ export const impactItems: ImpactItem[] = [
     description:
       "Communicated progress, blockers, and questions more clearly through structured updates and documentation.",
   },
-
+  {
+    title: "Assessment Recognition",
+    description:
+      "Received recognition for consistent performance, reliability, and positive contributions throughout the internship program.",
+  },
 ];

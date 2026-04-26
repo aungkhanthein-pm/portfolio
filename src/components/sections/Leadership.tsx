@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useRef } from "react";
-import { impactItems } from "@/data/portfolio";
+import { leadershipItems } from "@/data/portfolio";
 import { SpotlightCard } from "@/components/ui/spotlight-card";
 import {
   Users,
@@ -13,9 +13,6 @@ const leadershipIcons = [Users, MessageSquare, Handshake, Award];
 
 export function Leadership() {
   const ref = useRef(null);
-
-  // Filter only the leadership-related items (last 4 items added)
-  const leadershipItems = impactItems.slice(-4);
 
   return (
     <section id="leadership" className="section-padding bg-secondary/20">
@@ -36,7 +33,7 @@ export function Leadership() {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 auto-rows-fr">
-          {leadershipItems.map((item, i) => {
+          {leadershipItems && leadershipItems.map((item, i) => {
             const Icon = leadershipIcons[i % leadershipIcons.length];
             return (
               <div

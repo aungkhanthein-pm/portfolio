@@ -47,9 +47,7 @@ export function Contact() {
             Let&apos;s connect
           </h2>
           <p className="text-muted-foreground max-w-xl mx-auto leading-relaxed">
-            I&apos;m open to full-time roles, internship extensions, and
-            interesting conversations. Feel free to reach out through any of the
-            channels below.
+            I&apos;m seeking full-time opportunities in Singapore where I can obtain a valid work pass. Feel free to reach out through any of the channels below.
           </p>
         </div>
 
