@@ -234,9 +234,5 @@ export const impactItems: ImpactItem[] = [
     description:
       "Communicated progress, blockers, and questions more clearly through structured updates and documentation.",
   },
-  {
-    title: "Assessment Recognition",
-    description:
-      "Recognized with A (Excellent) ratings in company bi-monthly internship assessments, including later assessments with 5/5 average ratings.",
-  },
+
 ];
