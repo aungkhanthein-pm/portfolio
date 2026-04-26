@@ -247,6 +247,6 @@ export const leadershipItems: LeadershipItem[] = [
   {
     title: "Assessment Recognition",
     description:
-      "Received recognition for consistent performance, reliability, and positive contributions throughout the internship program.",
+      "Recognized with A (Excellent) ratings in company bi-monthly internship assessments, including later assessments with 5/5 average ratings.",
   },
 ];
